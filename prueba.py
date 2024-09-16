@@ -6,5 +6,7 @@ print("hola despues de segundos")
 
 print (type("hola")) ## La funcion 'type' me dice que tipo de dato hay en los parantesis.
 print(type(9))
+
 print(type(5.5))
 print("pruebagitignore")
+
