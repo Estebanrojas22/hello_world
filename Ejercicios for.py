@@ -31,4 +31,40 @@ def ejercicio_calcular_edad ():
         time.sleep(1)
     return edad
 
-ejercicio_calcular_edad()
+#ejercicio_calcular_edad()
+
+def numeros_impares ():
+    numero= int(input("Ingrese el numero: "))
+
+    for i in range(1, numero+1, 2):
+        print (i, end="\n")
+        time.sleep(1)
+        if i==15:
+            break;
+
+#numeros_impares()
+
+def reloj_segundos():
+
+    segundos= 60
+    cantidad_seg= int(input("Ingrese el limite de segundos: "))
+    for i in range(1, segundos+1):
+        #time.sleep(1)
+        print(i,"seg", end="\n")
+        if i== cantidad_seg:
+            break;
+    print("\33[43m"+"Tiempo terminado"+"\33[0m")
+
+#reloj_segundos()
+
+def interes_anual():
+    pesos_año= float(input("Cuanto dinero al año: "))
+    tasa_interes= float(input("Tasa de interés anual: "))
+    cantidad_años= int(input("Cuantos años: "))
+    for i in range(1, cantidad_años+1):
+        interes= pesos_año * (tasa_interes/100)
+        pesos_año= pesos_año + interes
+        print(f"En el año {i}, el dinero acumulado es: ${pesos_año:.2f}")
+        time.sleep(1)
+
+interes_anual()
