@@ -10,6 +10,7 @@ print(type(9))
 print(type(5.5))
 print("pruebagitignore")
 
+
 print("-----------------------------------")
 #variables
 bool= True 
@@ -34,3 +35,4 @@ d= True
 
 Resultado= (a and b and c and d)
 print ("El resultado es :",Resultado)
+
