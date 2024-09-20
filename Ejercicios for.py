@@ -67,4 +67,54 @@ def interes_anual():
         print(f"En el año {i}, el dinero acumulado es: ${pesos_año:.2f}")
         time.sleep(1)
 
-interes_anual()
+#interes_anual()
+
+#def numero_triangulos():
+    #numero= int(input("Ingrese un numero: "))
+    #for i in range(1, numero+1):
+           # print(" " * (numero-i)+ "*" *(1 * i - 1)" " * "*" *(1 * i - 1))
+            #time.sleep(1)
+   # print("\33[43m"+"Triángulo generado exitosamente"+"\33[0m")
+    
+
+#numero_triangulos()    
+
+#def descubrir_contraseña():
+    contraseña= "123456"
+    contraseña_ingresada=""
+    intentos = int(input("Ingrese el numero de intentos: "))
+    intento_contador= 1
+    while contraseña_ingresada!= contraseña:
+        contraseña_ingresada= str(input("Ingrese la contraseña: "))
+        print("Contraseña incorrecta, intente nuevamente")
+        if intento_contador == intentos:
+            print("Se ha superado el numero de intentos")
+            break
+        intento_contador = intento_contador + 1
+        print(contraseña_ingresada = contraseña == "La contrasea es correcta" or contraseña_ingresada != contraseña == "La contraseña es incorrecta")
+        
+#descubrir_contraseña()
+
+
+#def contador_caracteres():
+    palabra= str(input("Ingrese una frase: "))
+    letra= str(input("ingrese la letra que desee contar: "))
+    contador= palabra.count(letra)
+    print ("La cantidad de letras en la palabra",palabra,"es: ",contador)
+
+#contador_caracteres()
+
+#def contador_letras():
+    palabra= str(input("Ingrese una palabra: "))
+    letra= str(input("ingrese la letra que desee contar: "))
+    contador= 0
+    for i in palabra:
+        if i == letra:
+            contador += 1
+    print ("La cantidad de letras en la frase",palabra,"es: ",contador)
+
+#contador_letras()
+
+
+
+       

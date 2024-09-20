@@ -130,4 +130,22 @@ def juego_piedra_papel_tijera ():
         print ("Jugador 2 gana")
     return
 
-juego_piedra_papel_tijera()
+#juego_piedra_papel_tijera()
+
+def descubrir_contraseña():
+    contraseña= "123456"
+    intentos_ingresados= int(input("Ingrese la cantidad de intentos: "))
+    intentos= 0
+    while intentos_ingresados:
+        ingreso= input("Ingrese la contraseña: ")
+        if ingreso == contraseña:
+            print ("Contraseña correcta")
+            break
+        else:
+            intentos+=1
+            print ("Contraseña incorrecta. Te quedan", intentos+intentos_ingresados, "intentos")
+            
+    else:
+        print ("Contraseña incorrecta. Has superado el límite de intentos")
+
+descubrir_contraseña() 
